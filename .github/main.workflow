@@ -4,9 +4,10 @@ workflow "New workflow" {
 }
 
 action "Hello World" {
-  uses = "./action-a"
+  uses = "ballerinax/docker/tree/v0.990.3/base/docker"
   env = {
     MY_NAME = "Mona"
   }
   args = "\"Hello world, I'm $MY_NAME!\""
+  runs = "ballerina build"
 }
