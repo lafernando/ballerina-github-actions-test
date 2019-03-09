@@ -3,4 +3,5 @@
 pwd
 ls -la
 sh -c "echo $*"
-ballerina --version
+ls -la /opt
+/opt/ballerina-0.990.3/bin/ballerina --version
