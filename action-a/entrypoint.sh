@@ -3,5 +3,6 @@
 pwd
 ls -la
 sh -c "echo $*"
-ls -la /opt
-/opt/ballerina-0.990.3/bin/ballerina --version
+ls -la /ballerina/runtime
+echo $BALLERINA_HOME
+$BALLERINA_HOME/bin/ballerina --version
