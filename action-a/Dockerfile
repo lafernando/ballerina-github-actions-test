@@ -10,8 +10,6 @@ LABEL "com.github.actions.icon"="mic"
 
 LABEL "com.github.actions.color"="purple"
 
-
-
 LABEL "repository"="http://github.com/octocat/hello-world"
 
 LABEL "homepage"="http://github.com/actions"
@@ -21,5 +19,7 @@ LABEL "maintainer"="Octocat <octocat@github.com>"
 ADD entrypoint.sh /entrypoint.sh
 
 USER root
+
+RUN echo $GITHUB_REPOSITORY >> /github/workspace/.abc
 
 ENTRYPOINT ["/entrypoint.sh"]
