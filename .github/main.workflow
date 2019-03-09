@@ -4,7 +4,7 @@ workflow "New workflow" {
 }
 
 action "Hello World" {
-  uses = "ballerinax/docker/tree/v0.990.3/base/docker"
+  uses = "ballerinax/docker/tree/v0.990.3/base/docker@master"
   env = {
     MY_NAME = "Mona"
   }
