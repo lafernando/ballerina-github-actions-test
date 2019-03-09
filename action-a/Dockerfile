@@ -20,6 +20,4 @@ ADD entrypoint.sh /entrypoint.sh
 
 USER root
 
-RUN echo $GITHUB_REPOSITORY >> /github/workspace/.abc
-
 ENTRYPOINT ["/entrypoint.sh"]
