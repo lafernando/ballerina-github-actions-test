@@ -6,5 +6,4 @@ sh -c "echo $*"
 ls -la /ballerina/runtime
 echo $BALLERINA_HOME
 $BALLERINA_HOME/bin/ballerina --version
-ls /github -la
-ls /github/lafernando -la
+$BALLERINA_HOME/bin/ballerina build
