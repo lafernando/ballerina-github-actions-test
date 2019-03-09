@@ -5,7 +5,5 @@ ls -la
 sh -c "echo $*"
 ls -la /ballerina/runtime
 echo $BALLERINA_HOME
-mkdir ~/.ballerina
-echo "XXX" > x.txt
-cat x.txt
 $BALLERINA_HOME/bin/ballerina --version
+$BALLERINA_HOME/bin/ballerina build
