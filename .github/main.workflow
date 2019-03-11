@@ -4,6 +4,6 @@ workflow "New workflow" {
 }
 
 action "Ballerina Build" {
-  uses = "lafernando/github-actions/cli@master"
+  uses = "lafernando/github-actions/cli/0.990.3@master"
   args = "build"
 }
