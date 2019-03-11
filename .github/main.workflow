@@ -1,12 +1,9 @@
 workflow "New workflow" {
   on = "push"
-  resolves = ["Hello World"]
+  resolves = ["Ballerina Build"]
 }
 
-action "Hello World" {
-  uses = "./action-a"
-  env = {
-    MY_NAME = "Mona"
-  }
-  runs = "ballerina build"
+action "Ballerina Build" {
+  uses = "lafernando/github-actions/tree/master/cli@master"
+  args = "build"
 }
